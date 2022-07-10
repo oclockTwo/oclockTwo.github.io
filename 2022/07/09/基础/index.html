@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/oclockTwo/oclockTwo.github.io/img/fluid.png">
-  <link rel="icon" href="/oclockTwo/oclockTwo.github.io/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -19,7 +19,7 @@
     <meta name="description" content="数组、切片和映射数组、切片和映射 数组数组是一个长度固定的数据类型，是一段具有相同类型元素的连续块。 声明和初始化数组一般用法： 1var array [5]int      &#x2F;&#x2F;默认初始化为0  使用数组字面值声明数组： 12array :&#x3D; [5]int&amp;#123;10, 20, 30, 40, 50&amp;#125;array :&#x3D; [...]int&amp;#123;10, 20, 30, 40, 50">
 <meta property="og:type" content="article">
 <meta property="og:title" content="go基础">
-<meta property="og:url" content="https://github.com/oclockTwo/oclockTwo.github.io/2022/07/09/%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:url" content="https://oclocktwo.github.io/2022/07/09/%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="oclockTwo">
 <meta property="og:description" content="数组、切片和映射数组、切片和映射 数组数组是一个长度固定的数据类型，是一段具有相同类型元素的连续块。 声明和初始化数组一般用法： 1var array [5]int      &#x2F;&#x2F;默认初始化为0  使用数组字面值声明数组： 12array :&#x3D; [5]int&amp;#123;10, 20, 30, 40, 50&amp;#125;array :&#x3D; [...]int&amp;#123;10, 20, 30, 40, 50">
 <meta property="og:locale" content="zh_CN">
@@ -66,12 +66,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/oclockTwo/oclockTwo.github.io/css/main.css" />
+<link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/oclockTwo/oclockTwo.github.io/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/oclockTwo/oclockTwo.github.io/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
@@ -80,15 +80,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"github.com","root":"/oclockTwo/oclockTwo.github.io/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/oclockTwo/oclockTwo.github.io/local-search.xml"};
+    var CONFIG = {"hostname":"oclocktwo.github.io","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/oclockTwo/oclockTwo.github.io/js/utils.js" ></script>
-  <script  src="/oclockTwo/oclockTwo.github.io/js/color-schema.js" ></script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
 
 
@@ -105,7 +105,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/oclockTwo/oclockTwo.github.io/">
+    <a class="navbar-brand" href="/">
       <strong>oclockTwo</strong>
     </a>
 
@@ -124,7 +124,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/oclockTwo/oclockTwo.github.io/">
+              <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
                 首页
               </a>
@@ -136,7 +136,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/oclockTwo/oclockTwo.github.io/archives/">
+              <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 归档
               </a>
@@ -148,7 +148,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/oclockTwo/oclockTwo.github.io/categories/">
+              <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
                 分类
               </a>
@@ -160,7 +160,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/oclockTwo/oclockTwo.github.io/tags/">
+              <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 标签
               </a>
@@ -172,7 +172,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/oclockTwo/oclockTwo.github.io/about/">
+              <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 关于
               </a>
@@ -201,7 +201,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/oclockTwo/oclockTwo.github.io/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -320,7 +320,7 @@
 <li><p>切片访问元素的个数（长度）</p>
 </li>
 <li><p>切片允许增长到的元素个数（容量）</p>
-<img src="C:\Users\nibing\AppData\Roaming\Typora\typora-user-images\image-20200922214043374.png" srcset="/oclockTwo/oclockTwo.github.io/img/loading.gif" lazyload alt="切片内部实现" style="zoom:80%;" /></li>
+<img src="C:\Users\nibing\AppData\Roaming\Typora\typora-user-images\image-20200922214043374.png" srcset="/img/loading.gif" lazyload alt="切片内部实现" style="zoom:80%;" /></li>
 </ol>
 <p><strong>在函数间传递切片相当于是传递24个字节（64位），指针8字节，长度和容量分别8字节</strong></p>
 <h3 id="创建和初始化切片"><a href="#创建和初始化切片" class="headerlink" title="创建和初始化切片"></a>创建和初始化切片</h3><ol>
@@ -341,12 +341,12 @@
 <li><p>根据切片创建切片</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-comment">// 创建一个整型切片，其长度和容量都是 5 个元素</span><br>slice := []<span class="hljs-type">int</span>&#123;<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>, <span class="hljs-number">50</span>&#125;<br><span class="hljs-comment">// 创建一个新切片，其长度为 2 个元素，容量为 4 个元素</span><br>newSlice := slice[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>]<br></code></pre></td></tr></table></figure>
 
-<img src="C:\Users\nibing\AppData\Roaming\Typora\typora-user-images\image-20200923100206286.png" srcset="/oclockTwo/oclockTwo.github.io/img/loading.gif" lazyload alt="共享同一数组的两个切片" style="zoom:80%;" /></li>
+<img src="C:\Users\nibing\AppData\Roaming\Typora\typora-user-images\image-20200923100206286.png" srcset="/img/loading.gif" lazyload alt="共享同一数组的两个切片" style="zoom:80%;" /></li>
 </ol>
 <h3 id="使用切片"><a href="#使用切片" class="headerlink" title="使用切片"></a>使用切片</h3><h4 id="append函数"><a href="#append函数" class="headerlink" title="append函数"></a>append函数</h4><p>要使用append函数， 需要一个被操作的切片和一个要追加的值。当append返回时，会返回一个包含修改结果的新切片。append函数总是会增加新切片的长度，而容量不一定会被改变，这取决于被操作的切片的可用容量。</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-comment">// 创建一个整型切片，其长度和容量都是 5 个元素</span><br>slice := []<span class="hljs-type">int</span>&#123;<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>, <span class="hljs-number">50</span>&#125;<br><span class="hljs-comment">// 创建一个新切片，其长度为 2 个元素，容量为 4 个元素</span><br>newSlice := slice[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>]<br><span class="hljs-comment">// 使用原有的容量来分配一个新元素，将新元素赋值为 60</span><br>newSlice = <span class="hljs-built_in">append</span>(newSlice, <span class="hljs-number">60</span>)<br></code></pre></td></tr></table></figure>
 
-<img src="https://i.loli.net/2020/09/23/StWsxFYMl14THdn.png" srcset="/oclockTwo/oclockTwo.github.io/img/loading.gif" lazyload alt="image-20200923103808950" style="zoom:80%;" />
+<img src="https://i.loli.net/2020/09/23/StWsxFYMl14THdn.png" srcset="/img/loading.gif" lazyload alt="image-20200923103808950" style="zoom:80%;" />
 
 <p><strong>如果切片的底层数组没有足够的可用容量，append函数会创建一个新的底层数组，并将原有的数组拷贝过去。在切片的容量小于1000个元素时，总是会成倍的增加容量，一旦元素个数超过1000，容量的增长因子为1.25，也就是每次增加25%。随着语言的演化，这个增长算法可能会改变</strong></p>
 <p>函数append是一个可变参数的函数，这意味着可以在一次调用传递多个追加的值。如果使用…运算符，可以将一个切片的所有元素都追加到另一个切片中：</p>
@@ -586,7 +586,7 @@
 <h2 id="Goroutinue"><a href="#Goroutinue" class="headerlink" title="Goroutinue"></a>Goroutinue</h2><p>协程是<em><strong>非抢占式</strong></em>多任务处理，由协程主动交出控制权，这也就是说理论上一个协程如果不主动让出CPU，那么其就一直运行下去直到结束。但是Goroutinue和传统意义上的协程不一样的是调度器会控制协程间的切换，因此虽然协程是非抢占式的，但是何时交出控制权并不完全是由程序员控制的，Go的调度器会在合适的点进行切换，比如*(只是参考)*I&#x2F;O、Select、等待锁、函数调用(有时)等等。程序员控制的切换有runtime.Gosched()。</p>
 <p>协程是编译器、解释器、虚拟机层面的多任务，对于操作系统而言是没有协程的存在的。</p>
 <p>多个协程可能在<strong>一个或多个线程</strong>上运行，这取决于Go语言的调度器。</p>
-<p><img src="https://i.loli.net/2021/06/04/3F9J4a1Z7HSfEIX.png" srcset="/oclockTwo/oclockTwo.github.io/img/loading.gif" lazyload alt="image-20210604105137309"></p>
+<p><img src="https://i.loli.net/2021/06/04/3F9J4a1Z7HSfEIX.png" srcset="/img/loading.gif" lazyload alt="image-20210604105137309"></p>
 <h2 id="Select"><a href="#Select" class="headerlink" title="Select"></a>Select</h2><p>select是专为通道设计的，每个case语句都只能包含通道操作的表达式。select语句被用于从多个send&#x2F;receive Channel操作中选择一个。Select语句会阻塞，直到多个Channel的读&#x2F;写操作中有一个或多个就绪，如果有多个就绪，那么会随机的选择一个。</p>
 <p><strong>注意：读&#x2F;写操作就绪是指这个读&#x2F;写操作是可以正常读取出或者正常写入的，不会发生阻塞。</strong></p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">server1</span><span class="hljs-params">(ch <span class="hljs-keyword">chan</span> <span class="hljs-type">string</span>)</span></span> &#123;  <br>    time.Sleep(<span class="hljs-number">6</span> * time.Second)<br>    ch &lt;- <span class="hljs-string">&quot;from server1&quot;</span><br>&#125;<br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">server2</span><span class="hljs-params">(ch <span class="hljs-keyword">chan</span> <span class="hljs-type">string</span>)</span></span> &#123;  <br>    time.Sleep(<span class="hljs-number">3</span> * time.Second)<br>    ch &lt;- <span class="hljs-string">&quot;from server2&quot;</span><br><br>&#125;<br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;  <br>    output1 := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">string</span>)<br>    output2 := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-type">string</span>)<br>    <span class="hljs-keyword">go</span> server1(output1)<br>    <span class="hljs-keyword">go</span> server2(output2)<br>    <span class="hljs-keyword">select</span> &#123;<br>    <span class="hljs-keyword">case</span> s1 := &lt;-output1:<br>        fmt.Println(s1)<br>    <span class="hljs-keyword">case</span> s2 := &lt;-output2:<br>        fmt.Println(s2)<br>    &#125;<br>&#125;<br><span class="hljs-comment">//输出 from server2 后程序结束</span><br></code></pre></td></tr></table></figure>
@@ -618,7 +618,7 @@
 <p>失败测试的输出并不包括调用t.Errorf时刻的堆栈调用信息。和其他编程语言或测试框架的assert断言不同，t.Errorf调用也没有引起panic异常或停止测试的执行。<strong>即使前面的数据导致了测试的失败，后面的测试数据依然会运行测试</strong>，因此在一个测试中我们可能了解多个失败的信息。</p>
 <p>如果我们真的需要停止测试，或许是因为初始化失败或可能是早先的错误导致了后续错误等原因，我们可以使用t.Fatal或t.Fatalf停止当前测试函数。它们必须在和测试函数同一个goroutine内调用。</p>
 <p>测试失败的信息一般的形式是“f(x) &#x3D; y, want z”，其中f(x)解释了失败的操作和对应的输入，y是实际的运行结果，z是期望的正确的结果。</p>
-<h2 id="传统测试和表格驱动测试"><a href="#传统测试和表格驱动测试" class="headerlink" title="传统测试和表格驱动测试"></a>传统测试和表格驱动测试</h2><h3 id="传统测试"><a href="#传统测试" class="headerlink" title="传统测试"></a>传统测试</h3><p><img src="https://i.loli.net/2021/06/06/wOQZxqpIMD2aT4u.png" srcset="/oclockTwo/oclockTwo.github.io/img/loading.gif" lazyload alt="image-20210606215132318"><strong>缺点：</strong>1.测试数据和测试逻辑混在一起；2.出错信息不明确；3.一旦一个数据出错测试全部结束。</p>
+<h2 id="传统测试和表格驱动测试"><a href="#传统测试和表格驱动测试" class="headerlink" title="传统测试和表格驱动测试"></a>传统测试和表格驱动测试</h2><h3 id="传统测试"><a href="#传统测试" class="headerlink" title="传统测试"></a>传统测试</h3><p><img src="https://i.loli.net/2021/06/06/wOQZxqpIMD2aT4u.png" srcset="/img/loading.gif" lazyload alt="image-20210606215132318"><strong>缺点：</strong>1.测试数据和测试逻辑混在一起；2.出错信息不明确；3.一旦一个数据出错测试全部结束。</p>
 <h3 id="表格驱动测试"><a href="#表格驱动测试" class="headerlink" title="表格驱动测试"></a>表格驱动测试</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">TestAdd</span><span class="hljs-params">(t *testint.T)</span></span> &#123;<br>    tests := []<span class="hljs-keyword">struct</span>&#123;<br>    	a,b,c <span class="hljs-type">int32</span><br>	&#125;&#123;<br>    	&#123;<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>&#125;,<br>    	&#123;<span class="hljs-number">0</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>&#125;,<br>    	&#123;<span class="hljs-number">-1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>&#125;,<br>	&#125;<br>	<span class="hljs-keyword">for</span> _, tt := <span class="hljs-keyword">range</span> tests&#123;<br>    	<span class="hljs-keyword">if</span> actual := Add(tt.a, tt.b); actual != tt.c &#123;<br>            t.Errorf(<span class="hljs-string">&quot;Add(%d,%d);&quot;</span> + <span class="hljs-string">&quot;got %d; expected %d&quot;</span>, tt.a, tt.b, actual, tt.c)<br>    	&#125;<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p><strong>特点：</strong>1.分离测试数据和测试逻辑；2.明确的出错信息；3.可以部分失败。</p>
@@ -716,7 +716,7 @@
 <li>Call.AnyTimes()：允许调用次数为 0 次或更多次</li>
 <li>Call.Times()：设置调用次数为 n 次</li>
 </ul>
-<h2 id="Gomonkey"><a href="#Gomonkey" class="headerlink" title="Gomonkey"></a>Gomonkey</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>gomonkey是一个专门用以打桩（桩代码：指用来代替关联代码或者未实现代码的代码）的第三方库(<a href="https://github.com/agiledragon/gomonkey)%EF%BC%8C%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E8%89%AF%E5%A5%BD%EF%BC%8C%E5%8A%9F%E8%83%BD%E5%8D%81%E5%88%86%E5%BC%BA%E5%A4%A7%EF%BC%8Cgomonkey%E5%8F%AF%E4%BB%A5%E4%B8%BA%E6%88%91%E4%BB%AC%E6%8F%90%E4%BE%9B%E4%BB%A5%E4%B8%8B%E5%8A%9F%E8%83%BD%EF%BC%9A">https://github.com/agiledragon/gomonkey)，接口设计良好，功能十分强大，gomonkey可以为我们提供以下功能：</a></p>
+<h2 id="Gomonkey"><a href="#Gomonkey" class="headerlink" title="Gomonkey"></a>Gomonkey</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>gomonkey是一个专门用以打桩（桩代码：指用来代替关联代码或者未实现代码的代码）的第三方库(<a target="_blank" rel="noopener" href="https://github.com/agiledragon/gomonkey)%EF%BC%8C%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E8%89%AF%E5%A5%BD%EF%BC%8C%E5%8A%9F%E8%83%BD%E5%8D%81%E5%88%86%E5%BC%BA%E5%A4%A7%EF%BC%8Cgomonkey%E5%8F%AF%E4%BB%A5%E4%B8%BA%E6%88%91%E4%BB%AC%E6%8F%90%E4%BE%9B%E4%BB%A5%E4%B8%8B%E5%8A%9F%E8%83%BD%EF%BC%9A">https://github.com/agiledragon/gomonkey)，接口设计良好，功能十分强大，gomonkey可以为我们提供以下功能：</a></p>
 <ul>
 <li>为一个函数打一个桩</li>
 <li>为一个成员方法打一个桩</li>
@@ -743,7 +743,7 @@
 </ol>
 <h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> <span class="hljs-built_in">test</span> <br>go <span class="hljs-built_in">test</span> -gcflags=all=-l<br></code></pre></td></tr></table></figure>
 
-<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><p><a href="https://github.com/agiledragon/gomonkey/tree/master/test">https://github.com/agiledragon/gomonkey/tree/master/test</a></p>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><p><a target="_blank" rel="noopener" href="https://github.com/agiledragon/gomonkey/tree/master/test">https://github.com/agiledragon/gomonkey/tree/master/test</a></p>
 <h1 id="使用pprof进行性能调优"><a href="#使用pprof进行性能调优" class="headerlink" title="使用pprof进行性能调优"></a>使用pprof进行性能调优</h1><p>性能调优的一般步骤：</p>
 <p>1.使用<code>go test -bench . -cpuprofile cpu.out</code>获取性能数据文件cpu.out</p>
 <p>2.使用<code>go tool pprof cpu.out</code>查看性能数据</p>
@@ -830,7 +830,7 @@
 <p>写屏障就是在更改指针内容前执行一小段代码，这段代码是go在编译时增加的。</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs go">*slot = ptr  <span class="hljs-comment">// 如果ptr这个对象之前是白色的，那么在执行这行代码前会将其置灰</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://gitee.com/blini/blog_picture/raw/master/img/image-20220608155703724.png" srcset="/oclockTwo/oclockTwo.github.io/img/loading.gif" lazyload alt="image-20220608155703724"></p>
+<p><img src="https://gitee.com/blini/blog_picture/raw/master/img/image-20220608155703724.png" srcset="/img/loading.gif" lazyload alt="image-20220608155703724"></p>
 <h2 id="gc触发时间点"><a href="#gc触发时间点" class="headerlink" title="gc触发时间点"></a>gc触发时间点</h2><ol>
 <li>gcTriggerHeap：当前已分配内存与上次GC结束后存活对象的内存达到某个比例时（一般是2倍）触发。</li>
 <li>gcTriggerTime：sysmon检测2min内是否运行过gc，没有的话就触发gc。</li>
@@ -870,13 +870,13 @@
 <li><p>如果分配对象的size小于16字节并且是无指针的，那么直接在每个P的tiny分配器中进行分配。</p>
 </li>
 <li><p>如果分配对象的size是16字节~32KB之间，则从当前P中的mcache中分配，mcache中67*2（*2是代表有指针对象和无指针对象；67个代表不同size的mspan）个mspan，以及一个tiny分配器，还有栈内存分配cache。如果当前P中的mcache中的mspan都用完了，则从该size的mspan的后备mcentral中分配一个mspan；如果也没有了，则从全局唯一的mheap中进行分配；如果还是没有，就扩大堆内存（mmap&#x2F;sbrk）</p>
-<p><img src="https://gitee.com/blini/blog_picture/raw/master/img/image-20220609020116186.png" srcset="/oclockTwo/oclockTwo.github.io/img/loading.gif" lazyload alt="image-20220609020116186"></p>
+<p><img src="https://gitee.com/blini/blog_picture/raw/master/img/image-20220609020116186.png" srcset="/img/loading.gif" lazyload alt="image-20220609020116186"></p>
 <blockquote>
 <p>mcache是每个P独有的，所以每个G在mcache中进行内存的申请和释放都是无锁的；mcentral是所有P共享的，所以需要加锁，但是由于进行了数据分治，因此锁粒度较小；mheap是全局唯一的，对其操作需要加锁。</p>
 </blockquote>
 </li>
 <li><p>如果分配对象的size大于32KB，则直接调用mheap中分配，如果内存不够，则调用mmap&#x2F;sbrk申请堆内存。</p>
-<p><img src="https://gitee.com/blini/blog_picture/raw/master/img/image-20220609020051502.png" srcset="/oclockTwo/oclockTwo.github.io/img/loading.gif" lazyload alt="image-20220609020051502"></p>
+<p><img src="https://gitee.com/blini/blog_picture/raw/master/img/image-20220609020051502.png" srcset="/img/loading.gif" lazyload alt="image-20220609020051502"></p>
 </li>
 </ol>
 <p>内存管理总体上类似TCMalloc，同时golang也做了一些优化：</p>
@@ -885,7 +885,7 @@
 <li>每个P有不同size的mspan，可以无锁管理，同时也优化内存碎片</li>
 <li>mheap采用类似伙伴分配器的方式管理空闲页，进行页的分配和合并</li>
 </ol>
-<p><img src="https://gitee.com/blini/blog_picture/raw/master/img/image-20220701145339233.png" srcset="/oclockTwo/oclockTwo.github.io/img/loading.gif" lazyload alt="image-20220701145339233"></p>
+<p><img src="https://gitee.com/blini/blog_picture/raw/master/img/image-20220701145339233.png" srcset="/img/loading.gif" lazyload alt="image-20220701145339233"></p>
 
                 
               </div>
@@ -904,7 +904,7 @@
     
       <span class="category-chain">
         
-  <a href="/oclockTwo/oclockTwo.github.io/categories/Go/" class="category-chain-item">Go</a>
+  <a href="/categories/Go/" class="category-chain-item">Go</a>
   
   
 
@@ -919,9 +919,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/oclockTwo/oclockTwo.github.io/tags/%E5%8E%9F%E5%88%9B/">#原创</a>
+        <a href="/tags/%E5%8E%9F%E5%88%9B/">#原创</a>
       
-        <a href="/oclockTwo/oclockTwo.github.io/tags/go%E8%AF%AD%E8%A8%80/">#go语言</a>
+        <a href="/tags/go%E8%AF%AD%E8%A8%80/">#go语言</a>
       
     </div>
   
@@ -934,7 +934,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>go基础</div>
-      <div>https://github.com/oclockTwo/oclockTwo.github.io/2022/07/09/基础/</div>
+      <div>https://oclocktwo.github.io/2022/07/09/基础/</div>
     </div>
     <div class="license-meta">
       
@@ -976,7 +976,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/oclockTwo/oclockTwo.github.io/2022/07/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" title="测试文章">
+                      <a href="/2022/07/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" title="测试文章">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">测试文章</span>
                         <span class="visible-mobile">上一篇</span>
@@ -986,7 +986,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/oclockTwo/oclockTwo.github.io/2022/07/09/hello-world/" title="Hello World">
+                      <a href="/2022/07/09/hello-world/" title="Hello World">
                         <span class="hidden-mobile">Hello World</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -1113,8 +1113,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/oclockTwo/oclockTwo.github.io/js/events.js" ></script>
-<script  src="/oclockTwo/oclockTwo.github.io/js/plugins.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -1136,7 +1136,7 @@
 
 
   
-    <script  src="/oclockTwo/oclockTwo.github.io/js/img-lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -1208,7 +1208,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/oclockTwo/oclockTwo.github.io/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -1216,7 +1216,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/oclockTwo/oclockTwo.github.io/js/boot.js" ></script>
+<script  src="/js/boot.js" ></script>
 
 
   
